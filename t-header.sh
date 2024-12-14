@@ -85,16 +85,16 @@ if [ -e $PREFIX/share/figlet/Remo773.flf ]; then
 else
 wget https://raw.githubusercontent.com/remo7777/REMO773/master/Remo773.flf &> /dev/null;
 sleep 3
-cp Remo773.flf $PREFIX/share/figlet/Remo773.flf;
+cp MCS-Team.flf $PREFIX/share/figlet/MCS-Team.flf;
 cp ASCII-Shadow.flf $PREFIX/share/figlet/ASCII-Shadow.flf;
 sleep 3
-rm Remo773.flf
+rm MCS-Team.flf
 fi
 THEADER () 
 {
 clear;
 echo -e "\033[01;32m
-Remo773 (2020)
+MCS-Team (2024)
 		
 	menu
 +---------------------------*/
@@ -117,7 +117,7 @@ if [[ ${#PROC} -gt 8 ]]; then
 	sleep 4
 	clear
 echo -e "\033[01;32m
-Remo773 (2020)
+MCS-Team (2024)
 
 	menu
 +---------------------------*/
@@ -141,7 +141,7 @@ echo ;
 bash ~/T-Header/.banner.sh ${col} ${TNAME}
 echo "";
 #echo -e '\e[0;35m+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\e[00m';
-#echo -e '\033[1;43;30m### SUBSCRIBE MY YOUTUBE CHANNEL ### \033[0m';
+#echo -e '\033[1;43;30m### Visit Our Face Page MCS-Team ### \033[0m';
 #echo -e '\e[0;35m+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\e[00m';
 echo "";
 echo -e "
@@ -219,7 +219,7 @@ clear;
 echo -e "\033[31m$(figlet -f Remo773 "T- Header")\e[0m"
 echo -e "\e[1;32m
 +----------------------------------*/
-Remo773 : (\e[33m14.4.2021\e[32m)
+MCS-Team : (\e[33m14.4.2021\e[32m)
 
 1. Oh-my-zsh
 2. Zsh-syntax-highlight (\e[33mplugins\e[01;32m)
