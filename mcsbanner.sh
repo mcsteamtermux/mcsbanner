@@ -79,11 +79,11 @@ echo "";
 apt install figlet pv ncurses-utils binutils coreutils wget git zsh termux-api procps gawk termux-tools -y &> /dev/null;
 rubygem_d &> /dev/null
 termux-wake-lock;
-if [ -e $PREFIX/share/figlet/Remo773.flf ]; then
-	echo -e "\e[1;34m[*] \033[32mRemo773.flf figlet font is present\033[0m";
+if [ -e $PREFIX/share/figlet/MCS-Team.flf ]; then
+	echo -e "\e[1;34m[*] \033[32mMCS-Team.flf figlet font is present\033[0m";
 	sleep 4
 else
-wget https://raw.githubusercontent.com/remo7777/REMO773/master/Remo773.flf &> /dev/null;
+wget https://raw.githubusercontent.com/mcsteamtermux/mcsbanner.flf &> /dev/null;
 sleep 3
 cp MCS-Team.flf $PREFIX/share/figlet/MCS-Team.flf;
 cp ASCII-Shadow.flf $PREFIX/share/figlet/ASCII-Shadow.flf;
@@ -94,7 +94,7 @@ THEADER ()
 {
 clear;
 echo -e "\033[01;32m
-MCS-Team (2024)
+MCS-Team (2020)
 		
 	menu
 +---------------------------*/
@@ -117,7 +117,7 @@ if [[ ${#PROC} -gt 8 ]]; then
 	sleep 4
 	clear
 echo -e "\033[01;32m
-MCS-Team (2024)
+MCS-Team (2020)
 
 	menu
 +---------------------------*/
@@ -149,15 +149,15 @@ echo -e "
 \033[0;31m└──╼ \e[1;31m❯\e[1;34m❯\e[1;90m❯\033[0m "
 
 tput setaf 3
-read -p  "Do you want to setup this ? (y/n) " PROC32
+read -p  "Do you want to setup this MCS-Team Banner Yes or No ? (y/n) " PROC32
 tput sgr 0
 if [[ ${PROC32} == [Y/y] ]]; then
-	if [ -e $HOME/t-header.txt ]; then
-		rm $HOME/t-header.txt;
+	if [ -e $HOME/mcsbanner.txt ]; then
+		rm $HOME/mcsbanner.txt;
 	fi
 
-	if [ -d $HOME/T-Header ]; then
-	cd $HOME/T-Header
+	if [ -d $HOME/mcsbanner ]; then
+	cd $HOME/mcsbanner
 	fi
 #if [ -e $HOME/.zshrc ]; then
 #	rm -rf ~/.zshrc
@@ -216,7 +216,7 @@ exit
 }
 
 clear;
-echo -e "\033[31m$(figlet -f Remo773 "T- Header")\e[0m"
+echo -e "\033[31m$(figlet -f MCS-Team "MCS-Team")\e[0m"
 echo -e "\e[1;32m
 +----------------------------------*/
 MCS-Team : (\e[33m14.4.2021\e[32m)
@@ -229,7 +229,7 @@ MCS-Team : (\e[33m14.4.2021\e[32m)
 +----------------------------------*/
 \033[0m";
 tput setaf 3;
-read -p  "Do you want to setup this ? (y/n) " PROC33
+read -p  "Do you want to setup this MCS-Team Banner Yes or No ? (y/n) " PROC33
 
 tput sgr 0
 if [[ ${PROC33} == [Y/y] ]]; then
